@@ -476,7 +476,10 @@
           return window.innerHeight > window.innerWidth;
         }
         function shouldShowOrientationGate() {
-          return false;
+          if (!isTouchDevice()) return false;
+          if (!isPortraitLayout()) return false;
+          var shortSide = Math.min(window.innerWidth, window.innerHeight);
+          return shortSide <= 1024;
         }
         function updateOrientationGate() {
           var gate = document.getElementById("orientation-gate");
