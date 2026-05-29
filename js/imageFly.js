@@ -170,7 +170,7 @@ window.initImageFlyScene = function initImageFlyScene(options) {
     : [];
   const BLESSING_MESSAGES = previewWishes.length
     ? previewWishes
-    : ["Happy Birthday 💕", "Yêu anh nhất ❤️", "Tuổi mới thật hạnh phúc 💖"];
+    : ["Anh yêu sinh nhật vui vẻ 💕", "Vui vẻ mỗi ngày ❤️", "Tuổi mới thật hạnh phúc 💖", "Tuổi mới rực rỡ 💖", "Yêu em nhiều hơn mỗi ngày 💖", "Trong túi có tiền, trong lòng có em ❤️"];
 
   function setProps(mesh) {
     mesh.vx = random(-0.04, 0.04);
