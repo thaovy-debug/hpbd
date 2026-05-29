@@ -254,7 +254,7 @@ function renderLetter(data) {
         $self.addClass("letter-revealed");
         window.setTimeout(function () {
           startLetterFall($self);
-        }, 320);
-      }, 1280);
+        }, 150);
+      }, 700);
     });
   });

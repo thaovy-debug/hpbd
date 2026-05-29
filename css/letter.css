@@ -139,10 +139,8 @@
 
 /* Khi mở: giữ khung hình 0% trong lúc delay (animation-fill-mode: both) */
 .envelope .envelope__card.open .letter {
-  -webkit-animation: letterUnfold 1.05s cubic-bezier(0.25, 0.85, 0.35, 1) 0.52s
-    both forwards;
-  animation: letterUnfold 1.05s cubic-bezier(0.25, 0.85, 0.35, 1) 0.52s both
-    forwards;
+  -webkit-animation: letterUnfold 0.8s cubic-bezier(0.25, 0.85, 0.35, 1) 0.2s both forwards;
+  animation: letterUnfold 0.8s cubic-bezier(0.25, 0.85, 0.35, 1) 0.2s both forwards;
 }
 
 @keyframes letterUnfold {
@@ -335,9 +333,9 @@
 }
 
 .envelope .envelope__card.open {
-  -webkit-animation: cardJump 0.5s ease 0.5s forwards;
-  -o-animation: cardJump 0.5s ease 0.5s forwards;
-  animation: cardJump 0.5s ease 0.5s forwards;
+  -webkit-animation: cardJump 0.4s ease 0.3s forwards;
+  -o-animation: cardJump 0.4s ease 0.3s forwards;
+  animation: cardJump 0.4s ease 0.3s forwards;
   z-index: 1;
 }
 
@@ -424,12 +422,12 @@
 }
 
 .envelope.open {
-  animation: envelopeBgFadeOut 0.45s ease 0.95s forwards;
+  animation: envelopeBgFadeOut 0.4s ease 0.4s forwards;
 }
 
 .envelope.open > .envelope__side,
 .envelope.open > .heart {
-  animation: envelopeShellFadeOut 0.45s ease 0.95s forwards;
+  animation: envelopeShellFadeOut 0.4s ease 0.4s forwards;
 }
 
 /* Căn giữa toàn bộ khối do .container flex — không dịch margin khi mở */
@@ -446,26 +444,26 @@
   > .envelope__card.open {
   -webkit-animation: none;
   animation: none;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -5%, 0) scale(1.02);
+  transform: translate3d(0, -5%, 0) scale(1.02);
 }
 
-/* Bước 2a — lá thư trượt xuống (translate3d + easing mềm ở đoạn cuối) */
+/* Bước 2a — lá thư trượt xuống nhẹ (translate3d + easing mềm ở đoạn cuối) */
 @-webkit-keyframes letterFall {
   0% {
-    -webkit-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -5%, 0) scale(1.02);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
 @keyframes letterFall {
   0% {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -5%, 0) scale(1.02);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 
@@ -505,19 +503,19 @@
 
 @keyframes cardJump {
   from {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   to {
-    transform: translateY(-100%);
+    transform: translateY(-5%) scale(1.02);
   }
 }
 
 @-webkit-keyframes cardJump {
   from {
-    -webkit-transform: translateY(0);
+    -webkit-transform: translateY(0) scale(1);
   }
   to {
-    -webkit-transform: translateY(-100%);
+    -webkit-transform: translateY(-5%) scale(1.02);
   }
 }
 
