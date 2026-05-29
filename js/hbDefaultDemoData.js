@@ -9,10 +9,10 @@
       },
       music: {
         tracks: [
-          "./assets/audios/Happy Birthday to You  - AMEE x Hoàng Dũng.mp3",
+          "./assets/audios/Số 1 Thế Giới-[AudioTrimmer.com].mp3",
         ],
         selectedTrackUrl:
-          "./assets/audios/Happy Birthday to You  - AMEE x Hoàng Dũng.mp3",
+          "./assets/audios/Số 1 Thế Giới-[AudioTrimmer.com].mp3",
       },
       book: {
         images: [
