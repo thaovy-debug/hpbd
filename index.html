@@ -64,8 +64,9 @@
           }
 
           if (!id && !isPreviewMode && !isDemoMode) {
-            var createUrl = new URL("./create.html", window.location.href);
-            window.location.replace(createUrl.href);
+            // Remove redirection since create.html doesn't exist
+            // var createUrl = new URL("./create.html", window.location.href);
+            // window.location.replace(createUrl.href);
           }
         } catch (_) {
           /* ignore */
