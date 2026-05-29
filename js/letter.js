@@ -98,7 +98,10 @@ function renderLetter(data) {
   }
 
   function isFinalGiftEnabled() {
-    return !!window.__HB_PREVIEW_DATA?.finalGift?.enabled;
+    if (window.__HB_PREVIEW_DATA && window.__HB_PREVIEW_DATA.finalGift !== undefined) {
+      return !!window.__HB_PREVIEW_DATA.finalGift.enabled;
+    }
+    return true;
   }
   
   function whenGiftDataReady(done) {
