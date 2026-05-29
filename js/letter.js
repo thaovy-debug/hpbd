@@ -49,7 +49,7 @@ function renderLetter(data) {
     var fallTimer = window.setTimeout(function () {
       card.removeEventListener("animationend", onFallEnd);
       finishLetterFall($self);
-    }, 1300);
+    }, 500);
   
     function onFallEnd(e) {
       if (e.target !== card) return;
@@ -254,7 +254,7 @@ function renderLetter(data) {
         $self.addClass("letter-revealed");
         window.setTimeout(function () {
           startLetterFall($self);
-        }, 150);
-      }, 700);
+        }, 50);
+      }, 400);
     });
   });

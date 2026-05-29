@@ -139,8 +139,8 @@
 
 /* Khi mở: giữ khung hình 0% trong lúc delay (animation-fill-mode: both) */
 .envelope .envelope__card.open .letter {
-  -webkit-animation: letterUnfold 0.8s cubic-bezier(0.25, 0.85, 0.35, 1) 0.2s both forwards;
-  animation: letterUnfold 0.8s cubic-bezier(0.25, 0.85, 0.35, 1) 0.2s both forwards;
+  -webkit-animation: letterUnfold 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) 0s both forwards;
+  animation: letterUnfold 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) 0s both forwards;
 }
 
 @keyframes letterUnfold {
@@ -333,9 +333,9 @@
 }
 
 .envelope .envelope__card.open {
-  -webkit-animation: cardJump 0.4s ease 0.3s forwards;
-  -o-animation: cardJump 0.4s ease 0.3s forwards;
-  animation: cardJump 0.4s ease 0.3s forwards;
+  -webkit-animation: cardJump 0.3s ease 0s forwards;
+  -o-animation: cardJump 0.3s ease 0s forwards;
+  animation: cardJump 0.3s ease 0s forwards;
   z-index: 1;
 }
 
@@ -422,12 +422,12 @@
 }
 
 .envelope.open {
-  animation: envelopeBgFadeOut 0.4s ease 0.4s forwards;
+  animation: envelopeBgFadeOut 0.3s ease 0.2s forwards;
 }
 
 .envelope.open > .envelope__side,
 .envelope.open > .heart {
-  animation: envelopeShellFadeOut 0.4s ease 0.4s forwards;
+  animation: envelopeShellFadeOut 0.3s ease 0.2s forwards;
 }
 
 /* Căn giữa toàn bộ khối do .container flex — không dịch margin khi mở */
@@ -470,8 +470,8 @@
 .envelope-wrapper.letter-revealed.letter-revealed-settling
   .envelope.open
   > .envelope__card.open {
-  -webkit-animation: letterFall 1.12s cubic-bezier(0.18, 0.82, 0.22, 1) forwards;
-  animation: letterFall 1.12s cubic-bezier(0.18, 0.82, 0.22, 1) forwards;
+  -webkit-animation: letterFall 0.4s cubic-bezier(0.18, 0.82, 0.22, 1) forwards;
+  animation: letterFall 0.4s cubic-bezier(0.18, 0.82, 0.22, 1) forwards;
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
